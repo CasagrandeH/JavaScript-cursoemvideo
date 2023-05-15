@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../curso-html-css/html-css/imgs/favicon/Casa/Casa02.ico" type="image/x-icon">
+    <title>Meu Primeiro Script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Olá, Mundo!</h1>
+        <p>Já me livrei da maldição MUAHAHAHAHAHAHAHA!!!!!</p>
+        <script>
+            window.alert(`Funciona sem aspas?`)
+            var num1 = Number(window.prompt('Digite um numero.'))
+            var num2 = Number.parseFloat(window.prompt('Digite outro numero'))
+            var soma = num1 + num2
+            window.alert('A soma dos seus numeros é: ' + String(soma))
+            window.alert('A soma é um/a: ' + typeof soma)
+            var soma = String(soma)
+            window.alert('A soma é um/a: ' + typeof soma)
+            var nome = 'Gustavo'
+            var idade = 21
+            var nota1 = Number(5)
+            var nota2 = Number(soma)
+            var media = (nota1 + nota2) / 2
+            window.alert(`O aluno de ${idade} anos, ${nome}, tirou ${media} no teste de JavaScript. `)
+        </script>
+    </main>
+</body>
+</html>
