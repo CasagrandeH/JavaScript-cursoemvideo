@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        
+        var nome = window.prompt(`Qual é teu nome?`)
+        document.write(`O seu nome tem ${nome.length} letras!<br>`)
+
+        var salario = Number(window.prompt(`E ${nome}, Qual é seu salario?`))
+
+        var salario = salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        document.write(`${nome} tem um salario mensal de ${salario}!`)
+
+    </script>
+</body>
+</html>
