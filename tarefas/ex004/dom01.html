@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            color: wheat;
+        }
+        #msg {
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>rofl</p>
+    <p>l<strong>ma</strong>o</p>
+    <div class="msg0" name="msg1" id="msg2">clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var corpo = window.document.body
+        /*
+        window.document.write(window.document.URL)
+        window.document.write('<br><br>' + p1.innerHTML)
+        p1.style.color = 'blue'
+        corpo.style.backgroundColor = 'gray'
+        var msg = window.document.getElementById('msg')
+        msg2.style.color = 'white'
+        msg2.style.backgroundColor = 'green'
+        msg2.innerText = 'Estou no aguarde meu caro...'
+        var d = window.document.getElementsByName('msg1')[0]
+        */
+        var d = document.querySelector('div#msg2')
+        d.style.color = 'blue'
+    </script>
+</body>
+</html>
