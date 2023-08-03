@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+:root {
+    --fonte: Arial, Helvetica, sans-serif;
+    --cor: brown;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor);
+    text-align: center;
+    font-family: var(--fonte);
+}
+
+header {
+    color: white;
+    font-size: 1.4em;
+    padding: 2vw;
+}
+
+main {
+    width: 800px;
+    height: 250px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+}
+
+div {
+    text-align: left;
+    padding: 20px 0px;
+    font-size: 1.2em;
+}
+
+label {
+    color: var(--cor);
+    font-style: italic;
+}
+
+input {
+    padding: 3px 6px;
+    color: var(--cor);
+    border: 1px solid var(--cor);
+    border-radius: 4px;
+}
+
+button {
+    padding: 3px 6px;
+    color: var(--cor);
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid var(--cor);
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: var(--cor);
+    color: white;
+}
+
+button#finish {
+    display: block;
+}
+
+textarea {
+    width: 200px;
+    height: 120px;
+    resize: none;
+    overflow: scroll;
+    color: var(--cor);
+    border: 1px solid var(--cor);
+    border-radius: 4px;
+}
+
+footer {
+    color: white;
+    font-style: italic;
+    font-size: 1.2em;
+    padding: 2vw;
+}
