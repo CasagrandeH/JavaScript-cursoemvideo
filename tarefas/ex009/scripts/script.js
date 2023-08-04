@@ -5,8 +5,8 @@ let res = document.querySelector('#res')
 let values = []
 
 function adds() {
-    let number = document.querySelector('#number').value
-    let num = Number(number)
+    let number = document.querySelector('#number')
+    let num = Number(number.value)
 
     if (num < 1 || num > 100 || isNaN(num)) {
         window.alert('Preencha a caixa com valores de 1 a 100!')
@@ -14,13 +14,23 @@ function adds() {
         window.alert('O numero ja está na lista!')
     } else {
         values.push(num) 
-        info.value += `O numero ${num} foi adicionado.\n\n`;
+        info.value += `Valor ${num} adicionado.\n`;
+        //O codigo abaixo faz com que a caixa de texto scrolle para baixo automaticamente
         info.scrollTop = info.scrollHeight
     }
 
+    /*Esta condicional serve para apagar o resultado anterior
+    caso o usuario queira começar denovo.*/
     if (res.innerHTML !== '<p>Resultado...</p>') {
         res.innerHTML = '<p>Resultado...</p>'
     }
+
+    /*Estas linhas de codigo fazem com que o input automaticamente
+    seja limpo ao executar a função, e o codigo de baixo faz com que
+    a caixa seja automaticamente selecionada para mais rapida digitação.*/
+    number.value = ''
+    number.focus()
+
 }
 
 function finishes() {

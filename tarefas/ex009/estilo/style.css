@@ -11,7 +11,7 @@
 }
 
 p {
-    line-height: 1.4em;
+    line-height: 1.2em;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.264);
 }
 
@@ -41,6 +41,7 @@ main {
     background-color: white;
     padding: 30px;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.483);
+    border: 1px solid black;
 }
 
 div {
@@ -65,17 +66,17 @@ input {
 
 button {
     padding: 3px 6px;
-    color: var(--cor);
+    color: white;
     font-weight: bold;
-    background-color: transparent;
+    background-color: var(--cor);
     border: 1px solid var(--cor);
     border-radius: 4px;
     box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.505);
 }
 
 button:hover {
-    background-color: var(--cor);
-    color: white;
+    background-color: transparent;
+    color: var(--cor);
 }
 
 button#finish {
@@ -92,7 +93,7 @@ textarea {
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.505);
     color: black;
     font-family: var(--fonte);
-    font-size: 0.7em;
+    font-size: .9em;
 }
 
 footer {
