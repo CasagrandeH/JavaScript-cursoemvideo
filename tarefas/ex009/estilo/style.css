@@ -11,7 +11,7 @@
 }
 
 p {
-    line-height: 2em;
+    line-height: 1.4em;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.264);
 }
 
@@ -25,7 +25,7 @@ body {
 header {
     color: white;
     font-size: 1.4em;
-    padding: 2vw;
+    padding: 1.6vw;
 }
 
 header > h1 {
@@ -99,7 +99,7 @@ footer {
     color: white;
     font-style: italic;
     font-size: 1.2em;
-    padding: 2vw;
+    padding: 1.8vh;
 }
 
 footer > p {
