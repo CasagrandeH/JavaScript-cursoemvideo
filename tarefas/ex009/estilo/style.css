@@ -10,10 +10,16 @@
     padding: 0;
 }
 
+p {
+    line-height: 2em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.264);
+}
+
 body {
     background-color: var(--cor);
     text-align: center;
     font-family: var(--fonte);
+    padding: 10px;
 }
 
 header {
@@ -22,13 +28,19 @@ header {
     padding: 2vw;
 }
 
+header > h1 {
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.264);
+}
+
 main {
-    width: 800px;
-    height: 250px;
+    max-width: 800px;
+    min-width: 320px;
+    height: auto;
     border-radius: 10px;
     margin: auto;
     background-color: white;
     padding: 30px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.483);
 }
 
 div {
@@ -38,15 +50,17 @@ div {
 }
 
 label {
-    color: var(--cor);
-    font-style: italic;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.264);
 }
 
 input {
     padding: 3px 6px;
-    color: var(--cor);
-    border: 1px solid var(--cor);
+    border: 2px solid black;
     border-radius: 4px;
+    width: 14vw;
+    box-shadow: inset 1px 1px 3px 1px rgba(0, 0, 0, 0.505);
+    font-family: var(--fonte);
+    font-size: 0.7em;
 }
 
 button {
@@ -56,6 +70,7 @@ button {
     background-color: transparent;
     border: 1px solid var(--cor);
     border-radius: 4px;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.505);
 }
 
 button:hover {
@@ -70,11 +85,14 @@ button#finish {
 textarea {
     width: 200px;
     height: 120px;
+    padding: 3px 6px;
     resize: none;
-    overflow: scroll;
-    color: var(--cor);
-    border: 1px solid var(--cor);
-    border-radius: 4px;
+    overflow-y: scroll;
+    border: 2px solid black;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.505);
+    color: black;
+    font-family: var(--fonte);
+    font-size: 0.7em;
 }
 
 footer {
@@ -82,4 +100,8 @@ footer {
     font-style: italic;
     font-size: 1.2em;
     padding: 2vw;
+}
+
+footer > p {
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.264);
 }
